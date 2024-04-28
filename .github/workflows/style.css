@@ -1,0 +1,294 @@
+body{
+background-color:white;
+}
+
+.inconsolata-<uniquifier> {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-extrabold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+h1{
+text-align: center;
+font-family: "Archivo Black", sans-serif;
+}
+
+
+h2{
+text-align: center;
+font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+h3{
+font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+font-style: italic;
+background-color:#ADD8E6;
+text-align: center;
+}
+
+h5{
+font-family: "Kanit", sans-serif;
+background-color:#DCDCDC;
+border-style: dotted;
+dcheight: 100px;
+dcwidth: 200px;
+text-align: center;
+}
+
+h6{
+font-family: "Kanit", sans-serif;
+font-weight:200px;
+text-align: center;
+}
+
+.accordion-body { 
+            background-color:#ADD8E6 ; 
+            color: black 
+            border: 1px solid #000;
+}
+
+
+.accordion-item { 
+            background-color:#ADD8E6 ;
+            color: black 
+            border: 1px solid #000;
+}
+
+
+#store{
+font-size: 2.5em;
+}
+
+#current{
+font-weight: 600;
+}
+
+#second{
+font-weight: 600;
+}
+
+@media screen and (max-width: 980px){
+
+	#pagewrap{
+	width: 90%;
+	}
+
+	#content{
+	width: 60%;
+	background-color: olive;
+	}
+
+	#sidebar{
+	width: 30%
+	background-color: teal;
+	}
+
+	img{
+	width: 60%;
+	}
+
+}
+
+@media screen and (max-width: 700px){
+	#content{
+	width: auto;
+	float: none;
+	background color: orange;
+	}
+	
+	#sidebar{
+	width: auto;
+	float: none;	
+	}
+
+	img{
+	width: 60%;
+	}
+
+}
+
+@media screen and (max-width: 600px){
+
+	#content{
+	width: auto;
+	float: none;
+	background color: yellow;
+	}
+	
+	h1{
+	font-size: 50px;
+	}
+	
+	#sidebar{
+	display: none;	
+	}
+
+}
+
+
+@media screen and (max-width: 480px){
+
+	#content{
+	width: auto;
+	float: none;
+	background color: yellow;
+	}
+	
+	h1{
+	font-size: 50px;
+	}
+	
+	#sidebar{
+	display: none;	
+	}
+
+}
+
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+
+
+#yrcvr {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+
+
+#acov80 {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#a801 {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#a802 {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#acov90 {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#a901 {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#a902 {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#acov00 {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#logo{
+border-radius: 50%
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#ADD8E6 ;
+  color: white;
+  text-align: center;
+}
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+#form2{
+background-color:#DCDCDC;
+border-style: solid;
+text-align: center;
+width: 150px;
+height: 50px;
+}
+
+.col-sm-4{
+text-align: center;
+}
+
+.col-sm-2{
+text-align: center;
+
+.col-sm-6{
+text-align: center;
+}
+
+#submit{
+text-align: center;
+width: 300px;
+}
+
+.navbar navbar-expand-lg bg-body-secondary{
+background-color:#ADD8E6;
+}
