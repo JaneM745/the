@@ -1,0 +1,220 @@
+<!--CA 2 Submission - Student Number 23271159-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Second Clicks</title>
+
+<!--link to css-->
+<link href="style.css" rel="stylesheet">
+
+<!--discount function-->
+<script>
+  function add(){
+  var num1, num2, sum;
+  num1 = parseInt(document.getElementById("firstnumber").value);
+  num2 = parseInt(document.getElementById("secondnumber").value);
+  sum = (num1*10) + (num2*15);
+  document.getElementById("answer").value = sum;
+  }
+  </script>
+</head>
+<body>
+<!-- nav -->
+<nav class="navbar navbar-expand-lg bg-body-secondary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="bi bi-phone"></i><!--Navbar--></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Your Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page3.html">Our Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page4.html">Trade-In</a>
+        </li>
+        <a class="nav-link" href="page5.html">Cart</a>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+
+<body background="back4.jpg">
+
+<!--LOGO & CART COLUMN-->
+<div class="row">
+    <div class="col-sm-4">
+      <a href= page1.html><img id="logo"src="logo.png" alt="logo"></ahref</img></a>
+      </div>
+      <div class="col-sm-4">
+        <h1>
+          <p id="coname">SECOND CLICKS</p>
+          <p>TRADE IN DISCOUNT</p>
+          </h1>
+      </div>
+        <div class="col-sm-4">
+          <h3>
+            <button onclick="document.location='page5.html'">
+              CART
+              <i class="bi bi-cart" width ="40" height ="40"> </i>
+            </button>
+          </h3>
+          </div>
+</div>
+<br>
+      <!--FORM-->
+<div class="row">
+  <div class="col-sm-4">
+
+  </div>
+    <div class="col-sm-4">
+    <form name="myForm" action="page5.html" onsubmit="return validateForm()" method="post">
+      <P id="form2"> Brand</P>
+      <select id="phoneBrand" name="phoneBrand">
+        <option value="100"> -</option>
+  <option value="1"> AAA</option>
+  <option value="2"> BBB</option>
+  <option value="3"> CCC</option>
+  <option value="11"> DDD</option>
+  <option value="12"> EEE</option>
+    </select>
+    <br>
+    <br>
+    <P id="form2"> Model Number</P>
+    <select id="ModelNo" name="phoneBrand">
+      <option value="100">-</option>
+  <option value="1"> XX1</option>
+  <option value="2"> XX2</option>
+  <option value="3"> XX3</option>
+  <option value="11"> XX4</option>
+  <option value="13"> XX5</option>
+    </select>
+    <br>
+    <br>
+    <P id="form2"> Previously refurbished?</P>
+    <select id="Refurbed" name="phoneBrand">
+      <option value="3"> -</option>
+      <option value="1"> Yes</option>
+      <option value="2"> No</option>
+  </select>
+      <br>
+      <br>
+     <br>
+     <P id="form2"> Original packaging?</P>
+     <select id="package" name="package">
+      <option value="3"> -</option>
+      <option value="1"> Yes</option>
+      <option value="2"> No</option>
+  </select>
+
+      <br>
+      <br>
+      <input type="submit" value="Submit" id="submit">
+  </form>
+      </div>
+      <div class="col-sm-2">
+        <h5>
+          <P id="puzzle"></i></P></i><i class="bi bi-gift"></i>
+      <P>GUESSING GAME<i class="bi bi-puzzle"></i></P>
+    </h5>
+      <P> Guess the correct number to <br>Enter our Free Draw</i>
+      </P>
+      <button onclick="game()"></i></P>
+        Start Now</button>
+        <script type="text/javascript">
+         function game() {
+         var iSecretNumber = Math.floor(Math.random()*900);
+          var bGoAgain = true;
+          while (bGoAgain){
+          var iYourNumber = parseInt(prompt("Your number"));
+          <!--if-->
+          if (iYourNumber == iSecretNumber){
+          alert("Congratulations");
+          }
+          else{
+          alert("Bad Luck, Try Again!");
+          }
+          bGoAgain = confirm("Try Again?");
+          }
+          alert ("Goodbye!")
+        }
+          </script>
+
+      </div>
+    </div>
+
+    <!--BUTTON TO START GAME-->
+<div class="row">
+  <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4">
+     </div>
+     <div class="col-sm-4">
+         </div><div class="col-sm-4">
+        </div>
+      </div><div class="col-sm-4">
+      </div>
+  </div>
+<div>
+        <script>
+          function validateForm() {
+            let x = parseInt(document.getElementById("phoneBrand").value);
+            if (isNaN(x) || x < 1 || x > 10) {
+              alert("Invalid Brand Number");
+              return false;
+          }
+          let y = parseInt(document.getElementById("ModelNo").value);
+          if (isNaN(y) || y < 1 || y > 10) {
+              alert("Invalid Model Number");
+              return false;
+          }
+          let z = document.getElementById("Refurbed").value;
+          if (z > 2|| z<1) {
+              alert("You have not confirmed whether previously refurbished");
+              return false;
+          }
+          if (z=="") {
+              alert("You have not confirmed whether you have the original packaging");
+              return false;
+          }
+          let w = (document.getElementById("package").value);
+          if (w > 2|| w<1) {
+              alert("You have not input a correct value for packaging");
+              return false;
+          }
+          if (w=="") {
+              alert("You must confirm whether there is original packaging");
+              return false;
+          }
+          let idiscount = ((x +y-w+ +z)*10);
+          alert ("discount is € " + idiscount)
+          }
+          </script>
+
+<div class="footer">
+  <div class="row">
+    <div class="col-sm-4">
+        <P>Contact us</P>
+    </div>
+        <div class="col-sm-4">
+  <p>SECOND CLICKS &#169</p>
+  </div>
+  <div class="col-sm-4">
+    <p>Our privacy policy<i class="bi bi-lock"></i></p>
+  </div>
+    </div>
+    </div>
+</body>
+</html>
